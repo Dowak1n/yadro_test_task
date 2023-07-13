@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
-    "githubpage": "ng build --output-path=docs"
+    "githubpage": "ng build --output-path=docs --base-href=https://dowak1n.github.io/yadro_test_task/"
   },
   "private": true,
   "dependencies": {
