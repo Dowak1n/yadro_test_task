@@ -1,0 +1,48 @@
+<div class="container">
+  <div *ngIf="dataLoaded" class="rates-card">
+    <div class="rates-card-header">
+      <h2 class="rates-h1">Currency RUB</h2>
+      <button class="rates-add" (click)="loadAdditionalCurrencies()">
+        {{ showAdditionalCurrencies ? '-' : '+' }}
+      </button>
+    </div>
+
+    <div>
+      <p>{{ currentDate }}</p>
+    </div>
+
+    <div *ngFor="let currency of currencies" class="rates-element">
+      <span class="rates-currency">
+        {{ currency }}
+      </span>
+      <div class="rates-box">
+        <span>
+          {{ rates[currency].rate | number: '1.2-2' }}
+        </span>
+        <div>
+          <span *ngIf="rates[currency]?.diff !== undefined">
+            {{ rates[currency].diff | currencyDiff }}
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <ng-container *ngIf="showAdditionalCurrencies">
+      <div *ngFor="let currency of additionalCurrencies" class="rates-element">
+        <span class="rates-currency">
+          {{ currency }}
+        </span>
+        <div class="rates-box">
+          <span>
+            {{ rates[currency].rate | number: '1.2-2' }}
+          </span>
+          <div>
+            <span *ngIf="rates[currency]?.diff !== undefined">
+              {{ rates[currency].diff | currencyDiff }}
+            </span>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>

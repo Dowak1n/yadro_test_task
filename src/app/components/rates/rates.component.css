@@ -1,0 +1,63 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.rates-card {
+  padding: 25px 35px 0  35px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  background: #1A1A1D;
+  color: #C2CAD0;
+  font-family: Arial, serif ;
+}
+
+.rates-card-header {
+  display: flex;
+}
+
+.rates-h1 {
+  margin: 0 25px 0 0;
+}
+
+
+.rates-element {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.rates-currency {
+  margin-right: 15px;
+  min-width: 40px;
+}
+
+.rates-add {
+  color: #ffff;
+  border: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 15px;
+  font-size: 20px;
+  background: #C3073f;
+  cursor: pointer;
+}
+
+.rates-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 20px;
+  border-radius: 10px;
+  width: 100%;
+  background: #6F2232;
+  color: #FFFF;
+}
+
+@media (min-width: 426px) {
+  .container {
+    max-width: 420px;
+  }
+}
+
