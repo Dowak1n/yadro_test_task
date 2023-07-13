@@ -1,6 +1,7 @@
 # Курсы валют онлайн
 
-![project_picture](https://github.com/Dowak1n/yadro_test_task/assets/58392498/b105d542-0917-48bc-abef-834ef72c188a)
+![project_picture](https://github.com/Dowak1n/yadro_test_task/assets/58392498/8238aceb-e329-4020-82cc-7356c66dd309)
+
 
 Что было реализовано:
 
